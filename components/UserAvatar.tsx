@@ -7,14 +7,14 @@ function UserAvatar({
     image,
     classname
 }:{
-    name: string;
-    image: string;
+    name?: string | null;
+    image?: string | null;
     classname?: string;
 }) {
   return (
     <Avatar className={cn("bg-white text-black", classname)} >
         {image && (
-            <Image src={image} alt={name} width={40} height={40} className="rounded-full" />
+            <Image src={image} alt={name || 'Username'} width={40} height={40} className="rounded-full" />
         )}
     {/* <AvatarImage src="https://github.com/shadcn.png" /> */}
     <AvatarFallback className="dark:bg-white dark:text-black text-lg">
