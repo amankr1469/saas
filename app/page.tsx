@@ -8,6 +8,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className='relative isolate pt-14 dark:bg-gray-900'>
 
+        
 
         <div className='py-12 sm:py-20 lg:pb-40'>
           <div className='mx-auto max-w-7xl px-6 lg;px-8'>
